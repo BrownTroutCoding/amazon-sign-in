@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+        /* solid line styling outside of "new to amazon?" */
+        h4 {
+            display: flex;
+        }
+          
+        h4:before,
+        h4:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 1px solid #0000008c;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <header>
+        <a href="https://www.amazon.com/">
+        <img src="static/amazon.logo.jpg" height="31" width="103" alt=""></a>
+    </header>
+
+    <!-- Sign In Container -->
+    <section class="sign-in-container">
+        <div class="box" id="box">
+            <div class="sign-in-header" id="sign-in">
+                <h1>Sign In</h1>
+            </div>
+            <div class="main-tile-dimension">
+                <form>
+                    <label>Email(phone or mobile accounts)</label><br>
+                    <input type="text" id="email" placeholder="Enter Email"><br>
+                </div>
+                <label class="password-label">Password<a href="https://www.amazon.com/ap/forgotpassword?showRememberMe=true&openid.pape.max_auth_age
+                        =0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&mobileBrowserWe
+                        blabTreatment=C&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fsign%2Fs%3Fk%3Dsign%2Bin%26ref_%3Dnav_signin&pr
+                        evRID=Q2WKVZFQJC9E311DQ2V1&openid.assoc_handle=usflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C
+                        &prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidenti
+                        fier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" class="forgot-password-label">Forgot Password</a><br>
+                    <input type="text" class="password-input" placeholder="Enter Password"></label><br>
+                </form>
+                <a href="#"></a><button type="button" class="continue-button">Continue</button>
+                <!-- Dropdown text -->
+                <div class="dropdown">
+                    <details>
+                        <summary>Need Help?</summary>
+                        <ul>
+                            <div class="list">
+                                <li class="forgot-pass"><a href="https://www.amazon.com/ap/forgotpassword?showRememberMe=true&openid.pape.max_auth_age=0&openid.identity=h
+                                    ttp%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&mobileBrowserWeblabTreatment=C&openid.
+                                    return_to=https%3A%2F%2Fwww.amazon.com%2Fsign%2Fs%3Fk%3Dsign%2Bin%26ref_%3Dnav_signin&prevRID=TGPY8YNVSJT5RY5R4K04
+                                    &openid.assoc_handle=usflex&openid.mode=checkid_setup&desktopBrowserWeblabTreatment=C&prepopulatedLoginId=&failedS
+                                    ignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F
+                                    %2Fspecs.openid.net%2Fauth%2F2.0">Forgot your password?</a></li>
+                                <li class="other"><a href="https://www.amazon.com/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8">Other issues with Sign-in</a></li>
+                            </div>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New account container -->
+    <section class="new">
+        <div class="new-to-amazon"></div>
+            <h4>&nbsp;&nbsp;New To Amazon?&nbsp;&nbsp;</h4>
+            <div class="account-box">
+                <a href="#" type="button" class="create-amazon-account"></a><button>Create Your Amazon Account</button>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="top">
+            <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088" class="conditions">Conditions of Use</a>
+            <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496" class="privacy-policy">Privacy Policy</a>
+            <a href="https://www.amazon.com/gp/help/customer/display.html" class="help">Help</a>
+        </div>
+        <div class="bottom">
+            <h5>© 1996-2020, Amazon.com,inc or it's Affiliates</h5>
+        </div>
+    </footer>
+</body>
+</html>
